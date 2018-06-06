@@ -2,28 +2,12 @@ body{
   background-color: #02010a;
 }
 
-#contenido{
-  width: 900px;
-  margin: auto;
-}
-
 header{
-  width: 100%;
-  height: 100px;
   color: white;
   text-shadow: 2px 2px #02010a;
   background-color: #5B7989;
   border-radius: 10px 10px 0px 0px;
-}
-
-header #titulo p{
-  float: left;
-}
-
-header ul li{
-  text-decoration: none;
-  display: inline-block;
-  float: right;
+  font-family: 'Dancing Script', cursive;
 }
 
 nav a:link, nav a:visited{
@@ -34,6 +18,47 @@ nav a:link, nav a:visited{
 
 nav a:hover{
   text-decoration: underline;
+}
+
+img{
+  box-shadow: 2px 2px #02010a;
+}
+
+/*media query para desktop*/
+@media (min-width: 900px) {
+  #contenido{
+    width: 900px;
+    margin: auto;
+  }
+
+  header{
+    width: 100%;
+    height: 100px;
+  }
+
+  header #titulo p{
+    float: left;
+  }
+
+  header ul{
+    float: right;
+    display: flex;
+  }
+
+  header ul li{
+    text-decoration: none;
+    display: inline-block;
+  }
+}
+
+/* media query para movil*/
+@media (max-width: 899px) {
+  #contenido{
+    width: 100%;
+    display: inline-block;
+    margin: 0px;
+  }
+
 }
 
 #imgcentral{
@@ -48,7 +73,7 @@ nav a:hover{
 }
 
 #imgcentral figure img{
-  width: 600px;
+  width: 90%;
   margin: 10px;
 }
 
@@ -60,12 +85,11 @@ nav a:hover{
 
 #imgsec figure{
   text-align: center;
-  margin: auto;
 }
 
 #imgsec figure img{
-  width: 300px;
-  margin: 10px;
+  width: 100%;
+  margin: auto;
 }
 
 footer{
