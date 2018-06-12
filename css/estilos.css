@@ -1,10 +1,13 @@
+/*media query ubicados al final para la distinción de resoluciones por ancho de pagina*/
 body{
   background-color: #02010a;
 }
 
 #contenido{
   max-width: 900px;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
 }
 
 header{
@@ -13,7 +16,7 @@ header{
   border-radius: 10px 10px 0px 0px;
   font-family: 'Dancing Script', cursive;
   overflow: auto;
-  animation: slidein 1s ;
+  animation: slidein 2s ;
 }
 
 @-webkit-keyframes slidein {
@@ -31,16 +34,18 @@ header{
 
 #titulo{
   text-shadow: 2px 2px #02010a;
-  font-size: 2em;
+  font-size: 3em;
   margin-left: 10px;
   text-align: center;
 
 }
 
-nav {
+header nav {
   text-align: center;
-  padding: 10px;
-  margin-top: 30px;
+  padding: 15px;
+  margin-top: 40px;
+  font-size: 2em;
+
 
 }
 
@@ -53,12 +58,16 @@ nav a:hover{
   text-decoration: underline;
 }
 
+#active{
+  text-decoration: underline;
+}
+
 img{
   box-shadow: 2px 2px #02010a;
   width: 100%;
   margin:auto;
 }
-
+/* estilos para index*/
 #imgcen{
   background-color: #82C3A6;
   padding: 10px;
@@ -87,24 +96,35 @@ img{
   border: 2px;
   transition: transform 1s ;
 }
+/*fin estilos index*/
 
+/*estilos para paisajes.html*/
+#galeria_p1{
+  background-color: #D5C75F;
+  border: 1px;
+  padding: 10px;
+  display: flex;
+  overflow: auto;
+}
+
+#estilo1{
+
+}
+
+/*fin estilos paisajes.html*/
 footer{
   border-radius: 0px 0px 10px 10px;
   background-color: #C6D5C5;
   overflow: auto;
   font-family: 'Dancing Script', cursive;
 }
-/*
-#column3{
-  vertical-align: middle;
-}*/
+
 #column3 img{
   box-shadow: none;
   height: 3vh;
   width: 3vh;
   transform: translate(0px,1px);
 }
-
 
 /*media query para desktop*/
 @media all and (min-width: 900px) {
@@ -124,6 +144,20 @@ footer{
   #imgsec{
     display: flex;
   }
+  #imgsec p{
+    display: none;
+  }
+
+  #imgsec h2{
+    display: none;
+  }
+  /*paisajes.html*/
+  #galeria_p1{
+    display: flex;
+
+  }
+
+
   footer{
     display: flex;
   }
@@ -138,9 +172,15 @@ footer{
   #contenido{
     width: 100%;
   }
+  #imgsec h2{
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    text-decoration: underline;
+    font-size:
+  }
   footer div{
     width: 100%;
-    padding: 10%;
+    padding: 10px;
     margin: auto;
   }
 }
