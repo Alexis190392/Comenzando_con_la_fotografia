@@ -200,10 +200,11 @@ footer{
     margin-right: auto;
   }
 
-
+  footer{
+      padding: 10px;
+  }
   footer div{
     width: 100%;
-    padding: 10px;
     margin: auto;
   }
 }
