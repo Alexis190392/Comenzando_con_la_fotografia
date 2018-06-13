@@ -37,16 +37,13 @@ header{
   font-size: 3em;
   margin-left: 10px;
   text-align: center;
-
 }
 
 header nav {
   text-align: center;
-  padding: 15px;
+  padding: 25px;
   margin-top: 40px;
-  font-size: 2em;
-
-
+  font-size: 1em;
 }
 
 nav a:link, nav a:visited{
@@ -99,18 +96,29 @@ img{
 /*fin estilos index*/
 
 /*estilos para paisajes.html*/
-#galeria_p1{
+#galeria_p{
   background-color: #D5C75F;
   border: 1px;
-  padding: 10px;
-  display: flex;
-  overflow: auto;
+  flex-flow: row wrap;
+}
+
+div [id*="estilo"]{
+  width: 30% ;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #estilo1{
-
+  filter: blur(10px);
 }
 
+#estilo2,#estilo4,#estilo6{
+  filter: grayscale(100%);
+}
+
+#estilo3{
+  filter: sepia(90%);
+}
 /*fin estilos paisajes.html*/
 footer{
   border-radius: 0px 0px 10px 10px;
@@ -152,9 +160,9 @@ footer{
     display: none;
   }
   /*paisajes.html*/
-  #galeria_p1{
+  #galeria_p{
     display: flex;
-
+    text-align: center;
   }
 
 
@@ -178,6 +186,21 @@ footer{
     text-decoration: underline;
     font-size:
   }
+
+  #galeria_p{
+    background-color: #D5C75F;
+    border: 1px;
+    flex-flow: row wrap;
+    padding: 10px
+  }
+
+  div [id*="estilo"]{
+    width: 100% ;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
   footer div{
     width: 100%;
     padding: 10px;
