@@ -95,8 +95,8 @@ img{
 }
 /*fin estilos index*/
 
-/*estilos para paisajes.html*/
-#galeria_p{
+/*estilos para paisajes.html y retatos.html*/
+#galeria_p,#galeria_r {
   background-color: #D5C75F;
   border: 1px;
   flex-flow: row wrap;
@@ -119,7 +119,7 @@ div [id*="estilo"]{
 #estilo3{
   filter: sepia(90%);
 }
-/*fin estilos paisajes.html*/
+/*fin estilos paisajes.html y retatos.html*/
 footer{
   border-radius: 0px 0px 10px 10px;
   background-color: #C6D5C5;
